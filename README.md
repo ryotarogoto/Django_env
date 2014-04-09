@@ -8,9 +8,11 @@ Djangoを使用したプロジェクトのテスト環境を作成するため�
 * iTerm2
 * VirtualBox (4.3.6)
 * Vagrant (1.4.3)
+* django1.6.2
 
 ## 初期設定
-Vagrantを使います。基本的なことは[こちら](http://dotinstall.com/lessons/basic_local_development_v2)
+Vagrantを使います。  
+基本的なことは[ドットインストールで](http://dotinstall.com/lessons/basic_local_development_v2)
 
 VagrantBoxの追加  
 
@@ -25,7 +27,25 @@ Vagrantのプラグインをインストール
 ターミナルで  
 
     cd ~
-    mkdir Django_env
+    git git@github.com:ryotarogoto/Django_env.git
     cd Django_env
-    git 
+    vagrant up
+
+待ちます...
+
+仮想環境に接続して環境設定を続ける。
+
+    vagrant ssh
+    sudo visudo
+
+編集画面が立ち上がるので  
+secure_pathに/usr/local/bin  
+を追加する。
+
+    wget http://peak.telecommunity.com/dist/ez_setup.py
+    sudo python2.7 ez_setup.py
+    sudo easy_install pip
+    sudo pip install django
+    sudo pip install mysql-python
+
 
