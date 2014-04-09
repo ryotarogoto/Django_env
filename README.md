@@ -51,8 +51,11 @@ Pythonの様々なツールとDjangoを追加
     sudo pip install mysql-python
     cd /var/www/dev.djangoenv.com/
 
-プロジェクトの作成
+プロジェクトの作成  
     sudo django-admin.py startproject mysite
 
-これで192.168.33.50にアクセスすると画面が確認出来ます。
+これで192.168.33.50にアクセスすると画面が確認出来る。  
 ここから先は[Djangoのチュートリアル](https://docs.djangoproject.com/en/1.6/intro/tutorial01/)
+
+## 動作確認
+2014/04/10

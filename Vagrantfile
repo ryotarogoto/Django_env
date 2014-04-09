@@ -18,6 +18,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     chef.json = {
       mysql: {
+        version: "5.5",
         server_root_password: "password",
         server_repl_password: "password",
         server_debian_password: "password",
