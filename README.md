@@ -9,6 +9,7 @@ Djangoを使用したプロジェクトのテスト環境を作成するため�
 * VirtualBox (4.3.6)
 * Vagrant (1.4.3)
 * django1.6.2
+* vagrant-berkshelfプラグインが開発停止のため、その部分は今書き直しています
 
 ## 初期設定
 Vagrantを使います。  
