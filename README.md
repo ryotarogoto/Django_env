@@ -42,10 +42,17 @@ Vagrantのプラグインをインストール
 secure_pathに/usr/local/bin  
 を追加する。
 
+Pythonの様々なツールとDjangoを追加
+
     wget http://peak.telecommunity.com/dist/ez_setup.py
     sudo python2.7 ez_setup.py
     sudo easy_install pip
     sudo pip install django
     sudo pip install mysql-python
+    cd /var/www/dev.djangoenv.com/
 
+プロジェクトの作成
+    sudo django-admin.py startproject mysite
 
+これで192.168.33.50にアクセスすると画面が確認出来ます。
+ここから先は[Djangoのチュートリアル](https://docs.djangoproject.com/en/1.6/intro/tutorial01/)
